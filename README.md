@@ -136,3 +136,5 @@ DATABASE = {
 - Ensure that PostgreSQL is running and accessible.
 
 - Make sure all dependencies are installed and the virtual environment is activated before running the application.
+
+- API Documentation can be found at https://documenter.getpostman.com/view/39694783/2sAY55ZxBx
