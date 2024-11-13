@@ -44,7 +44,7 @@ DATABASE = {
 
 - Create a virtual environment using the following command:
 
-  ```bash
+  ```
 
   python -m venv venv
 
@@ -56,7 +56,7 @@ DATABASE = {
 
   - **Windows**:
 
-    ```bash
+    ```
 
     .\venv\Scripts\activate
 
@@ -64,7 +64,7 @@ DATABASE = {
 
   - **MacOS/Linux**:
 
-    ```bash
+    ```
 
     source venv/bin/activate
 
@@ -74,7 +74,7 @@ DATABASE = {
 
 - Install the required Python packages by running:
 
-  ```bash
+  ```
 
   pip install -r requirements.txt
 
@@ -96,7 +96,7 @@ DATABASE = {
 
 - Update the database configuration in your application code (`app.py`):
 
-  ```python
+  ```
 
 DATABASE = {
     'dbname': 'postgres',
@@ -114,7 +114,7 @@ DATABASE = {
 
 - Run the Flask application using the following command:
 
-  ```bash
+  ```
 
   python app.py
 
@@ -125,7 +125,7 @@ DATABASE = {
 - Open another terminal to and run the client application using the following command:
 
 
-  ```bash
+  ```
 
   python client.py
 
