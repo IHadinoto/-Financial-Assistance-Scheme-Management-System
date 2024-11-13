@@ -1,0 +1,192 @@
+{
+  "info": {
+    "_postman_id": "45d6ba1f-0aa9-4680-a33c-5c115f72e29d",
+    "name": "Applicants and Schemes API",
+    "description": "Implementation of RESTful API endpoints that can support the following:\n\n1. API requests for managing Beneficiaries, Schemes and Applications.\n    \n2. Authentication and authorization for managing frontend and API access to the  \n    system",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "39694783"
+  },
+  "item": [
+    {
+      "name": "Get all applicants",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/applicants",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "applicants"
+          ]
+        },
+        "description": "Get all applicants."
+      },
+      "response": []
+    },
+    {
+      "name": "Create a new applicant",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"applicant_id\":\"01913b7a-4493-74b2-93f8-e684c4ca935c\",\"first_name\":\"John\",\"last_name\":\"Doe\",\"employment_status\":\"unemployed\",\"sex\":\"male\",\"marital_status\":\"single\",\"date_of_birth\":\"1990-01-01\",\"household\":[]}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/applicants",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "applicants"
+          ]
+        },
+        "description": "Create a new applicant."
+      },
+      "response": []
+    },
+    {
+      "name": "Get all schemes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/schemes",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "schemes"
+          ]
+        },
+        "description": "Get all schemes."
+      },
+      "response": []
+    },
+    {
+      "name": "Create a new scheme",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"scheme_id\":\"01913b89-9a43-7163-8757-01cc254783f3\",\"scheme_name\":\"Retrenchment Assistance Scheme\",\"description\":\"Financial assistance for retrenched workers\",\"criteria\":{\"employment_status\":\"unemployed\"},\"benefits\":[{\"id\":\"01913b8b-9b12-7d2c-a1fa-ea613b802ebc\", \"name\":\"SkillsFuture Credits\", \"amount\":500.00}]}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/schemes",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "schemes"
+          ]
+        },
+        "description": "Create a new scheme."
+      },
+      "response": []
+    },
+    {
+      "name": "Get eligible schemes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/schemes/eligible?applicant_id=1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "schemes",
+            "eligible"
+          ],
+          "query": [
+            {
+              "key": "applicant_id",
+              "value": "1"
+            }
+          ]
+        },
+        "description": "Get all schemes that an applicant (represented by applicant query string parameter) is eligible to apply for."
+      },
+      "response": []
+    },
+    {
+      "name": "Get all applications",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/applications",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "applications"
+          ]
+        },
+        "description": "Get all applications."
+      },
+      "response": []
+    },
+    {
+      "name": "Create a new application",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"application_id\":\"01913b90-3b43-7163-8757-01cc254783f4\",\"applicant_id\":\"01913b7a-4493-74b2-93f8-e684c4ca935c\",\"scheme_id\":\"01913b89-9a43-7163-8757-01cc254783f3\",\"application_date\":\"2023-01-01\",\"status\":\"pending\"}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/applications",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "applications"
+          ]
+        },
+        "description": "Create a new application."
+      },
+      "response": []
+    }
+  ]
+}
