@@ -20,7 +20,7 @@
 
 - Open the pgAdmin4 desktop application and create a new Database with the following parameters:
 
-  ```
+```
 
 DATABASE = {
     'dbname': 'postgres',
@@ -30,7 +30,7 @@ DATABASE = {
     'port': 5432
 }
 
-  ```
+```
 
 ### Step 3: Create the Tables
 
@@ -44,11 +44,11 @@ DATABASE = {
 
 - Create a virtual environment using the following command:
 
-  ```
+```
 
   python -m venv venv
 
-  ```
+```
 
 ### Step 2: Activate the Virtual Environment
 
@@ -56,39 +56,39 @@ DATABASE = {
 
   - **Windows**:
 
-    ```
+```
 
     .\venv\Scripts\activate
 
-    ```
+```
 
   - **MacOS/Linux**:
 
-    ```
+```
 
     source venv/bin/activate
 
-    ```
+```
 
 ### Step 3: Install Dependencies
 
 - Install the required Python packages by running:
 
-  ```
+```
 
   pip install -r requirements.txt
 
-  ```
+```
 
   Ensure your `requirements.txt` includes all necessary packages, such as:
 
-  ```
+```
 
   Flask
 
   psycopg2-binary
 
-  ```
+```
 
 ## 3. Running the Application
 
@@ -96,7 +96,7 @@ DATABASE = {
 
 - Update the database configuration in your application code (`app.py`):
 
-  ```
+```
 
 DATABASE = {
     'dbname': 'postgres',
@@ -106,7 +106,7 @@ DATABASE = {
     'port': 5432
 }
 
-  ```
+```
 
 ### Step 2: Start the Flask Application
 
@@ -114,22 +114,22 @@ DATABASE = {
 
 - Run the Flask application using the following command:
 
-  ```
+```
 
   python app.py
 
-  ```
+```
 
 ### Step 3: Testing the Endpoints
 
 - Open another terminal to and run the client application using the following command:
 
 
-  ```
+```
 
   python client.py
 
-  ```
+```
 
 ## Notes
 
