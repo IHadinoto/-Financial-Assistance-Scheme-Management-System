@@ -62,14 +62,6 @@ DATABASE = {
 
 ```
 
-  - **MacOS/Linux**:
-
-```
-
-    source venv/bin/activate
-
-```
-
 ### Step 3: Install Dependencies
 
 - Install the required Python packages by running:
